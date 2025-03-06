@@ -4,7 +4,7 @@ function Layout({ children }) {
 	return (
 		<div>
 			<nav>
-				<Link href="/">Product</Link> | <Link href="/cart">List</Link>
+				<Link href="/">상품목록</Link> | <Link href="/cart">장바구니</Link>
 			</nav>
 			<div>{children}</div>
 		</div>

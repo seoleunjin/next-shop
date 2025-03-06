@@ -1,11 +1,11 @@
 import { fetchProductById } from '@/api';
 import ProductHeader from '@/components/ProductHeader';
-import ProductInfo from '@/components/productInfo';
+import ProductInfo from '@/components/product-detail/ProductInfo';
 import axios from 'axios';
 
-// 상품 상세 정보 페이지 컴포넌트
+// 상품 상세 페이지 컴포넌트
 export default function ProductDetailPage({ productDetail }) {
-	const headerTitle = '상품 상세 정보 페이지!';
+	const headerTitle = '상품 상세 페이지!';
 	return (
 		<div>
 			<ProductHeader title={headerTitle} />

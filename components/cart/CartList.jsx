@@ -19,6 +19,7 @@ export default function CartList({ carts }) {
 		});
 		alert(data);
 		// 2. 상품 목록 갱신
+		// replace는 히스토리에 남지않음 push은 남음
 		router.replace(router.asPath);
 	};
 	return (
@@ -39,6 +40,7 @@ export default function CartList({ carts }) {
 								<div className={styles.description}>
 									<div>{cart.name}</div>
 									<div>{cart.price}</div>
+									{/* 인자(cart.id)를 넘겨주려면 화살표함수를 써야함함 */}
 									<button onClick={() => removeCart(cart.id)}>삭제하기</button>
 								</div>
 							</li>
